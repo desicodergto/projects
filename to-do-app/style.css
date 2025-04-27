@@ -80,7 +80,6 @@ li {
     margin-bottom: 20px;
 }
 
-
 input[type="text"] {
     width: 100%;
     padding: 10px;
@@ -100,7 +99,9 @@ input[type="text"] {
     font-size: 16px;
 }
 
-#count {
+#count-task,
+#count-complete,
+#count-pending {
     font-size: 20px;
     color: #718df1;
     margin-top: 5px;
@@ -130,4 +131,29 @@ input[type="text"] {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 80%;
     text-align: left;
+}
+
+/* model conform content to delete all to do list */
+#confirmModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.modal-content button {
+    margin: 10px;
+    padding: 8px 16px;
 }

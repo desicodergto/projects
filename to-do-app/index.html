@@ -12,7 +12,7 @@
 
 <body>
     <div class="nav">
-        <h1>To-Do APP</h1>
+        <h1>To Do APP</h1>
 
         <li class="nav-list">
             <a href="index.html">Home</a>
@@ -44,14 +44,23 @@
 
         <ul id="task-list"></ul>
 
-        <div id="count">Total Tasks: 0</div>
-        <div id="count">Completed Tasks: 0</div>
-        <div id="count">Pending Tasks: 0</div>
+        <div id="count-task">Total Tasks: 0</div>
+        <div id="count-complete">Completed Tasks: 0</div>
+        <div id="count-pending">Pending Tasks: 0</div>
         <div id="delete-all-btn">
             <button id="delete-all-btn">Delete All</button>
 
         </div>
 
+        <!-- conformation custom model on delete  -->
+        <div id="confirmModal" style="display: none;">
+            <div class="modal-content">
+                <p>Are you sure you want to delete all lists?</p>
+                <button id="confirmYes">confirm</button>
+                <button id="confirmNo">cancel</button>
+            </div>
+        </div>
+    </div>
 
 </body>
 
